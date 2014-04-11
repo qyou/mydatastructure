@@ -37,7 +37,7 @@ int pop_back(p_my_array_list this) {
 	return this->data[this->current_size--];
 }
 
-static swap(int* a, int* b) {
+static void swap(int* a, int* b) {
 	int tmp = *a;
 	*a = *b;
 	*b = tmp;
