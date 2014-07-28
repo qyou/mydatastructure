@@ -97,7 +97,7 @@ public:
 	void remove(int idx) {
 		if (idx < 0 || idx > size)
 			throw new std::out_of_range("Illegal index argument!");
-		for (int i = size - 1; i >= idx; --i) {
+		for (int i = idx+1; i < size; ++i) {
 			int j = i - 1;
 			array[j] = array[i];
 		}
